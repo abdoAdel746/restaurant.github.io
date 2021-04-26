@@ -1,0 +1,336 @@
+/*for large screens*/
+
+@media screen and (min-width:1301px) {}
+
+/*for small and medium screen*/
+
+@media screen and (max-width: 760px) {
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .d_menu {
+        display: block;
+    }
+    .header_content .navigator #navbar_menu {
+        background: #23282d;
+        z-index: 5;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 5em;
+        padding: 3em;
+    }
+    .header_content .navigator ul li {
+        margin: 8px;
+    }
+    .header_content .navigator ul li a {
+        padding-bottom: 0;
+    }
+}
+
+/*for medium screens*/
+
+@media screen and (min-width:701px) and (max-width:1300px) {
+    .header_content .navigator ul {
+        left: 33%;
+    }
+    .middle_header {
+        margin: auto;
+        margin-top: 11%;
+        padding: 2em;
+        height: 21em;
+        width: 30em;
+    }
+    .middle_header img {
+        width: 23em;
+    }
+    .middle_header h1 {
+        font-size: 4em;
+        top: 41%;
+        height: 28%;
+    }
+    .middle_header img:first-of-type {
+        top: 1em;
+        left: 15%;
+    }
+    .middle_header img:nth-of-type(2) {
+        top: 16em;
+        left: 15%;
+    }
+    .history {
+        display: flex;
+        margin-top: 13em;
+        padding: 2em;
+    }
+    .history div:nth-child(1) img {
+        width: 129%;
+        height: 59%;
+    }
+    .history div:nth-child(2) {
+        padding-top: 0;
+        margin-left: 8%;
+    }
+    .table .container {
+        padding: 1em;
+    }
+    @keyframes img_move1 {
+        0% {
+            top: 9em
+        }
+        100% {
+            top: 16em
+        }
+    }
+    @keyframes img_move {
+        0% {
+            top: 5em;
+        }
+        100% {
+            top: 1em;
+        }
+    }
+}
+
+/*for large tablets*/
+
+@media screen and (min-width:600px) and (max-width:700px) {
+    .history div:nth-child(1) img {
+        width: 100%;
+        padding-right: 1em;
+    }
+}
+
+@media screen and (min-width:431px) and (max-width:600px) {
+    .history {
+        display: block;
+    }
+    .history div:nth-child(1) img {
+        max-width: 100%;
+    }
+    .history div:nth-child(2) {
+        padding: 0;
+        padding-top: 14px;
+    }
+}
+
+@media screen and (min-width:430px) and (max-width:700px) {
+    .middle_header {
+        margin: 8em auto;
+        padding: 2em;
+        height: 15em;
+        width: 17em;
+    }
+    .middle_header img {
+        width: 12em;
+    }
+    .middle_header h1 {
+        font-size: 2em;
+        top: 44%;
+        height: 20%;
+    }
+    .middle_header img:first-of-type {
+        top: 5em;
+        left: 15%;
+    }
+    .middle_header img:nth-of-type(2) {
+        top: 7em;
+        left: 15%;
+    }
+    .history {
+        margin-top: 10em;
+        height: 50em;
+    }
+    .history div:nth-child(1) img {
+        max-width: 100%;
+        margin-right: 2em;
+        height: 20em;
+    }
+    .history div:nth-child(2) {
+        padding: 0;
+    }
+    .history div:nth-child(2) h1 {
+        font-size: 2em;
+    }
+    .history div:nth-child(2) p {
+        font-size: 18px;
+    }
+    @keyframes img_move1 {
+        0% {
+            top: 7em
+        }
+        100% {
+            top: 12em
+        }
+    }
+    @keyframes img_move {
+        0% {
+            top: 5em;
+        }
+        100% {
+            top: 3em;
+        }
+    }
+    .table .container {
+        padding: 0;
+    }
+    .smoke {
+        left: 6em;
+    }
+}
+
+/*for mobiles*/
+
+@media screen and (max-width:600px) {
+    .table .container {
+        padding: 0;
+    }
+    .slices {
+        display: block;
+        height: 60em;
+    }
+    .slices div:nth-child(1) {
+        width: 70%;
+        top: 6em;
+        left: -1em;
+        margin: auto;
+    }
+    .slices div:nth-child(2) {
+        margin-top: 30em;
+        padding: 0;
+    }
+    .slices div:nth-child(2) h1 {
+        font-size: 3em;
+    }
+    .slices div:nth-child(2) p {
+        font-size: 14px;
+    }
+    .sheif {
+        display: block;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .cheif_image {
+        width: 100%;
+    }
+    .smoke {
+        transform: translate(-13em, -12em);
+    }
+    @keyframes burger_not_hover {
+        0% {
+            transform: translateX(1em) translateY(-13em) scale(1.5);
+        }
+        100% {
+            transform: scale(.5, .98) rotate( 39deg) translate(-24em, 25em) skew( -40deg, -30deg);
+        }
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    .table .container {
+        padding: 0;
+    }
+    .middle_header img {
+        width: 10em;
+        left: 2em;
+    }
+    .middle_header {
+        margin: 10em 22%;
+        height: 15em;
+    }
+    .middle_header h1 {
+        font-size: 2em;
+        top: 106px;
+        left: 41px;
+        height: 50px;
+    }
+    .middle_header img:first-of-type {
+        top: 6em;
+    }
+    .middle_header img:nth-of-type(2) {
+        top: 7.5em;
+    }
+    @keyframes img_move1 {
+        0% {
+            top: 7.5em
+        }
+        100% {
+            top: 12em
+        }
+    }
+    @keyframes img_move {
+        0% {
+            top: 6.5em;
+        }
+        100% {
+            top: 3em;
+        }
+    }
+    .navigator .container {
+        margin: 0;
+    }
+    .header_content .navigator .logo {
+        font-size: 2em;
+    }
+    .history {
+        display: block;
+        height: 70em;
+    }
+    .history div:nth-child(1) img {
+        max-width: 100%;
+    }
+    .history div:nth-child(2) {
+        padding: 0;
+        padding-top: 14px;
+    }
+    .tasa {
+        padding: 0;
+        height: 12em;
+        margin-top: 22em;
+    }
+    .tasa .tasa_iamge img {
+        width: 65%;
+        height: 5em;
+        margin: auto 5em;
+    }
+    .tasa .tasa_iamge img:last-of-type {
+        left: 1em;
+    }
+    .burger_text {
+        width: 11em;
+        height: 11em;
+        transform: translate(6em, -20.5em);
+    }
+    @keyframes burger_not_hover {
+        0% {
+            transform: translateX(1em) translateY(-13em) scale(1.5);
+        }
+        100% {
+            transform: scale(.2, .98) rotate( 41deg) translate(-12em, -1em) skew( 316deg, 323deg);
+        }
+    }
+    @keyframes burger_hover {
+        50% {
+            transform: scale(.2, .98) rotate( 41deg) translate(-12em, -1em) skew( 316deg, 323deg);
+        }
+        100% {
+            transform: translateX(0em) translateY(-21em) scale(1);
+        }
+    }
+    .img-hover-zoom .container {
+        padding: 16px;
+        margin: auto 2em;
+    }
+}
